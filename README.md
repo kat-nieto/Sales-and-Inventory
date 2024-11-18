@@ -113,6 +113,8 @@ How can the company improve its inventory turnover, reduce stock shrinkage, and 
 
         Portafolio = DISTINCTCOUNT(dimProduct[ProductName])
 
+        Dead Stock = DIVIDE ([Inventory to Sell], [Units Received], 0)
+
 • Step 9: Create a new page for the Tooltip, and design the Gague chart plus the Gaguer axis, the following DAX expression was written:
 
         Tooltip- Sell-Through Rate = IF( [Sell-Through Rate] > 1 , [Sell-Through Rate], 1)
